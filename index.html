@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+<title>Slider</title>
+<style>
+    .wrap{
+        padding: 20%;
+    }
+    .pictures img{
+        width: 100%;
+        display: none;
+    }
+    .miniatures{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.1rem;
+    width: calc(25% - 0.1rem);
+    margin-top: 0.1rem;
+}
+    
+    .miniatures img{
+        width: 100%;
+
+    }
+    .currentFrame{
+        outline: 2px solid black;
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="wrap">
+    <div class="pictures"> 
+        <img src="selfie.jpg" alt="1" >
+        <img src="tanipuertorico.jpg" alt="2">
+        <img src="unclenico.jpg" alt="3">
+        <img src="cocopapa.jpg" alt="4">
+    </div>
+    <div class="miniatures"></div>
+    <div class="number"></div>
+    <button class="prev">Prev</button>
+   <button class="next">Next</button>
+   </div>
+
+ <script src="index.js"></script>
+</body>
+</html>
